@@ -1,5 +1,6 @@
 name: "lukdav.is"
 output_dir: "_site"
+exclude: "readme.md"
 navbar:
   title: "lukedav.is"
   left:
