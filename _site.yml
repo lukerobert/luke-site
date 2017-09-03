@@ -1,0 +1,53 @@
+name: "lukdav.is"
+output_dir: "_site"
+navbar:
+  title: "lukedav.is"
+  left:
+#    - text: "About"
+#      href: index.html
+#    - text: "Projects"
+#      href: projects.html
+#    - text: "Blog"
+#      href: blog.html
+    - text: "Resume"
+      href: resume.html
+    - text: "More"
+      menu:
+        - text: "Photos"
+        - text: "500px"
+          icon: fa-500px
+          href: "https://500px.com/dukelavis"
+        - text: "---------"
+        - text: "Sounds"
+        - text: "Tracks"
+          icon: fa-soundcloud
+          href: "https://soundcloud.com/luke-davis"
+        - text: "Mixes"
+          icon: fa-mixcloud
+          href: "https://www.mixcloud.com/LukeDavis"
+        - text: "---------"
+#        - text: "Games"
+#        - text: "Pico-8"
+#          icon: fa-gamepad
+#          href: "http://www.lexaloffle.com/bbs/?uid=22371&mode=carts"
+#        - text: "Other"
+#          icon: fa-paper-plane
+#          href: other_games.html
+#        - text: "---------"
+  right:
+    - icon: fa-github
+      href: "https://github.com/lukerobert"
+    - icon: fa-linkedin
+      href: "https://www.linkedin.com/in/luke-davis-b380ba76"
+    - icon: fa-envelope
+      href: "mailto:luke.robert@gmail.com"
+output:
+  html_document:
+    theme: simplex
+    highlight: tango
+    include:
+      in_header: header.html
+      after_body: footer.html
+    css: styles.css
+    toc: true
+    toc_float: true

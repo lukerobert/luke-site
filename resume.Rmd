@@ -1,0 +1,46 @@
+---
+title: Luke Davis
+output:
+  html_document:
+    css: styles.css
+---
+
+[luke.robert@gmail.com](mailto:luke.robert@gmail.com) | [lukedav.is](http://lukedav.is) | [github.com/lukerobert](https://github.com/lukerobert) | (303) 478 2957 | Cambridge, MA
+
+## Experience
+
+### DigitasLBi Advanced Analytics
+#### Sr. Data Scientist | January 2016 - Present | Boston, MA
+  * Created a price optimization tool / R package for School of Rock (the Broadway musical) using an ensemble model to predict sales and profit at various ticket price points. Implemented an AWS-hosted Shiny dashboard to visually and interactively display findings.
+  * Used regularized regression and a custom R visualization package to create a media mix model for Victoria's Secret, explaining the unique contribution of each media channel.
+  * Use Hive to query user-level ad log data (~ 45B rows, 6TB total size).
+  * Lead team-wide trainings on R best practices.
+
+### The Center for Effective Philanthropy
+#### Research Analyst | March 2015 - December 2015 | Cambridge, MA
+  * Developed a data automation and reporting application written in Python / Pandas.
+  * Analyzed and presented survey studies of grantees for philanthropic foundations.
+
+### Latitude Research
+#### Research Analyst | November 2013 - February 2015 | Beverly, MA
+  * Led fielding and analysis of surveys on advertising effectiveness for major TV networks.
+
+-------
+
+## Education
+### Carnegie Mellon University
+#### BS in Psychology | September 2009 - May 2013 | Pittsburgh, PA
+  * Coursework in machine learning, data visualization, and experimental design
+  * Research in group problem solving and educational video game development
+  * President of student TV club overseeing annual budget of $40,000 and staff of 20
+
+------
+
+## Technical Skills
+
+| []() |  |
+|---|---|
+| High-level R and R package development | SQL / Hive
+| Intermediate Python / Pandas | Unix command line
+| Git version control | AWS tools (S3, EC2)
+| Familiar with Javascript / D3 | Familiar with Scala and Spark

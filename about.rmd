@@ -1,0 +1,7 @@
+More about this website. This is what _italic_ text looks like. _It is very beautiful_. And **bolded things**. ***Both at the same time!***
+
+```{r}
+# This is R code.
+rnorm(100)
+```
+

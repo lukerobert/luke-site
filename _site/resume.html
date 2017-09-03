@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>Luke Davis</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/simplex.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+<!DOCTYPE HTML>
+<head>
+<title>Luke Davis</title>
+
+<link href="https://fonts.googleapis.com/css?family=Bitter:regular,b|Fira+Sans+Condensed:regular,b|Roboto:regular,i,100,400|Cormorant:regular,i,b" rel="stylesheet">
+
+<link rel="stylesheet" href="fonts/fira_code.css" type="text/css" charset="utf-8" />
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+</head>
+
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="styles.css" type="text/css" />
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 41px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 46px;
+  margin-top: -46px;
+}
+
+.section h2 {
+  padding-top: 46px;
+  margin-top: -46px;
+}
+.section h3 {
+  padding-top: 46px;
+  margin-top: -46px;
+}
+.section h4 {
+  padding-top: 46px;
+  margin-top: -46px;
+}
+.section h5 {
+  padding-top: 46px;
+  margin-top: -46px;
+}
+.section h6 {
+  padding-top: 46px;
+  margin-top: -46px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">lukedav.is</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="resume.html">Resume</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    More
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li class="dropdown-header">Photos</li>
+    <li>
+      <a href="https://500px.com/dukelavis">
+        <span class="fa fa-500px"></span>
+         
+        500px
+      </a>
+    </li>
+    <li class="divider"></li>
+    <li class="dropdown-header">Sounds</li>
+    <li>
+      <a href="https://soundcloud.com/luke-davis">
+        <span class="fa fa-soundcloud"></span>
+         
+        Tracks
+      </a>
+    </li>
+    <li>
+      <a href="https://www.mixcloud.com/LukeDavis">
+        <span class="fa fa-mixcloud"></span>
+         
+        Mixes
+      </a>
+    </li>
+    <li class="divider"></li>
+  </ul>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="https://github.com/lukerobert">
+    <span class="fa fa-github"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://www.linkedin.com/in/luke-davis-b380ba76">
+    <span class="fa fa-linkedin"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="mailto:luke.robert@gmail.com">
+    <span class="fa fa-envelope"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Luke Davis</h1>
+
+</div>
+
+
+<p><a href="mailto:luke.robert@gmail.com">luke.robert@gmail.com</a> | <a href="http://lukedav.is">lukedav.is</a> | <a href="https://github.com/lukerobert">github.com/lukerobert</a> | (303) 478 2957 | Cambridge, MA</p>
+<div id="experience" class="section level2">
+<h2>Experience</h2>
+<div id="digitaslbi-advanced-analytics" class="section level3">
+<h3>DigitasLBi Advanced Analytics</h3>
+<div id="senior-analyst-january-2016---present-boston-ma" class="section level4">
+<h4>Senior Analyst | January 2016 - Present | Boston, MA</h4>
+<ul>
+<li>Created a price optimization tool for School of Rock (the Broadway musical) using an ensemble model to predict sales and profit at various ticket price points. Implemented an AWS-hosted Shiny dashboard to visually and interactively display findings.</li>
+<li>Used regularized regression and a custom R visualization package to create a media mix model for Victoria’s Secret, explaining the unique contribution of each media channel.</li>
+<li>Run Hive queries on user-level ad log data (~ 45B rows, 6TB total size).</li>
+<li>Lead team-wide trainings on R best practices.</li>
+</ul>
+</div>
+</div>
+<div id="the-center-for-effective-philanthropy" class="section level3">
+<h3>The Center for Effective Philanthropy</h3>
+<div id="research-analyst-march-2015---december-2015-cambridge-ma" class="section level4">
+<h4>Research Analyst | March 2015 - December 2015 | Cambridge, MA</h4>
+<ul>
+<li>Analyzed and presented survey studies of grantees for philanthropic foundations.</li>
+<li>Contributed to the development of a Python / Pandas data management application.</li>
+</ul>
+</div>
+</div>
+<div id="latitude-research" class="section level3">
+<h3>Latitude Research</h3>
+<div id="research-analyst-november-2013---february-2015-beverly-ma" class="section level4">
+<h4>Research Analyst | November 2013 - February 2015 | Beverly, MA</h4>
+<ul>
+<li>Led fielding and analysis of surveys on advertising effectiveness for major TV networks.</li>
+</ul>
+<hr />
+</div>
+</div>
+</div>
+<div id="education" class="section level2">
+<h2>Education</h2>
+<div id="carnegie-mellon-university" class="section level3">
+<h3>Carnegie Mellon University</h3>
+<div id="bs-in-psychology-september-2009---may-2013-pittsburgh-pa" class="section level4">
+<h4>BS in Psychology | September 2009 - May 2013 | Pittsburgh, PA</h4>
+<ul>
+<li>Coursework in machine learning, data visualization, and experimental design</li>
+<li>Research in group problem solving and educational video game development</li>
+<li>President of student TV club overseeing annual budget of $40,000 and staff of 20</li>
+</ul>
+<hr />
+</div>
+</div>
+</div>
+<div id="technical-skills" class="section level2">
+<h2>Technical Skills</h2>
+<table>
+<thead>
+<tr class="header">
+<th><a href=""></a></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>High-level R and R package development</td>
+<td>SQL / Hive</td>
+</tr>
+<tr class="even">
+<td>Intermediate Python / Pandas</td>
+<td>Unix command line</td>
+</tr>
+<tr class="odd">
+<td>Git version control</td>
+<td>AWS tools (S3, EC2)</td>
+</tr>
+<tr class="even">
+<td>Familiar with Javascript / D3</td>
+<td>Familiar with Scala and Spark</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<!DOCTYPE HTML>
+
+<p class=footer>&copy; 2017 Luke Davis</p>
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

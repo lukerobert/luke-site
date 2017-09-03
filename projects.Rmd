@@ -1,0 +1,27 @@
+Here is a big list of projects. Also `rnorm` is a function that does stuff. Here's a block of code:
+```{r}
+rnorm(10)
+```
+
+
+### Table form
+
+| Project | Description | Posts |
+|--------|--------------------------------------------------|---|
+| zoomburst | Zoomable, interactive sunburst diagrams in D3.js with R (htmlwidget) bindings. | &rArr; |
+| grandmagus | R tools for analyzing Dota2 replay data and interfacing with OpenDota APIs. | &rArr; |
+| [aRimaa](https://github.com/lukerobert/arimaa) | Object representation for Arimaa games in R and game analysis tools. | [&rArr;](blog.html) |
+| lukemisc | Miscellaneous helper functions in R. | &rArr; |
+
+
+```{r setup}
+knitr::opts_chunk$set(echo = TRUE, cache = F, warning = F)
+library(printr)
+
+x <- 32 <= 50  # Code ligatures!
+x != F
+
+# Some cool comments.
+# Cooooooool.
+set.seed(2017)
+```
