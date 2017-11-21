@@ -9,12 +9,13 @@ output:
 
 ## Experience
 
-### DigitasLBi Advanced Analytics
+### DigitasLBi
 #### Sr. Data Scientist | January 2016 - Present | Boston, MA
-  * Created a price optimization tool / R package for School of Rock (the Broadway musical) using an ensemble model to predict sales and profit at various ticket price points. Implemented an AWS-hosted Shiny dashboard to visually and interactively display findings.
-  * Used regularized regression and a custom R visualization package to create a media mix model for Victoria's Secret, explaining the unique contribution of each media channel.
+  * Implemented an automated system for analyzing the revenue impact of promotional offers for Dunkin Donuts using H2O, Spark, Redshift, and AWS EMR clusters.
+  * Created a price optimization tool for School of Rock (the Broadway musical) using a customized ensemble model to predict sales and profit. Implemented an AWS-hosted interactive Shiny dashboard to display findings.
+  * Used regularized regression and a custom R visualization package to create a media mix model and quarterly reports for Victoria's Secret.
   * Use Hive to query user-level ad log data (~ 45B rows, 6TB total size).
-  * Lead team-wide trainings on R best practices.
+  * Lead team-wide trainings on R best practices and extensively contribute to documentation on git usage and package development.
 
 ### The Center for Effective Philanthropy
 #### Research Analyst | March 2015 - December 2015 | Cambridge, MA
@@ -31,7 +32,6 @@ output:
 ### Carnegie Mellon University
 #### BS in Psychology | September 2009 - May 2013 | Pittsburgh, PA
   * Coursework in machine learning, data visualization, and experimental design
-  * Research in group problem solving and educational video game development
   * President of student TV club overseeing annual budget of $40,000 and staff of 20
 
 ------
@@ -40,7 +40,8 @@ output:
 
 | []() |  |
 |---|---|
-| High-level R and R package development | SQL / Hive
-| Intermediate Python / Pandas | Unix command line
-| Git version control | AWS tools (S3, EC2)
-| Familiar with Javascript / D3 | Familiar with Scala and Spark
+| High-level R and R package development | Object-oriented design in Python
+| High-level SQL / Hive | Machine Learning on clusters with H2O
+| dplyr, sparklyr, shiny, pandas, scikitlearn | Unix command line / Linux
+| Git version control | AWS tools (S3, EC2, EMR, Redshift)
+| Visualization with D3, ggplot2, Tableau | Familiar with Scala and Spark
