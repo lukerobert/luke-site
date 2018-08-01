@@ -23,7 +23,9 @@
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.0.13/css/fa-svg-with-js.css" rel="stylesheet" />
+<script src="site_libs/font-awesome-5.0.13/js/fontawesome-all.min.js"></script>
+<script src="site_libs/font-awesome-5.0.13/js/fa-v4-shims.min.js"></script>
 <!DOCTYPE HTML>
 <head>
 <title>Luke Davis</title>
@@ -87,6 +89,9 @@ img {
 }
 .tabbed-pane {
   padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
 }
 button.code-folding-btn:focus {
   outline: none;
@@ -322,7 +327,7 @@ div.tocify {
   </a>
 </li>
 <li>
-  <a href="mailto:luke.robert@gmail.com">
+  <a href="mailto:mail@lukedav.is">
     <span class="fa fa-envelope"></span>
      
   </a>
@@ -341,19 +346,29 @@ div.tocify {
 </div>
 
 
-<p><a href="mailto:luke.robert@gmail.com">luke.robert@gmail.com</a> | <a href="http://lukedav.is">lukedav.is</a> | <a href="https://github.com/lukerobert">github.com/lukerobert</a> | (303) 478 2957 | Cambridge, MA</p>
+<p><a href="mailto:mail@lukedav.is">mail@lukedav.is</a> | <a href="http://lukedav.is">lukedav.is</a> | <a href="https://github.com/lukerobert">github.com/lukerobert</a> | (303) 478 2957 | Cambridge, MA</p>
+<hr />
 <div id="experience" class="section level2">
 <h2>Experience</h2>
-<div id="digitaslbi" class="section level3">
-<h3>DigitasLBi</h3>
-<div id="sr.-data-scientist-january-2016---present-boston-ma" class="section level4">
-<h4>Sr. Data Scientist | January 2016 - Present | Boston, MA</h4>
+<div id="publicis-spine" class="section level3">
+<h3>Publicis Spine</h3>
+<div id="sr.-data-scientist-february-2018---present-boston-ma" class="section level4">
+<h4>Sr. Data Scientist | February 2018 - Present | Boston, MA</h4>
 <ul>
-<li>Implemented an automated system for analyzing the revenue impact of promotional offers for Dunkin Donuts using H2O, Spark, Redshift, and AWS EMR clusters.</li>
-<li>Created a price optimization tool for School of Rock (the Broadway musical) using a customized ensemble model to predict sales and profit. Implemented an AWS-hosted interactive Shiny dashboard to display findings.</li>
-<li>Used regularized regression and a custom R visualization package to create a media mix model and quarterly reports for Victoria’s Secret.</li>
-<li>Use Hive to query user-level ad log data (~ 45B rows, 6TB total size).</li>
-<li>Lead team-wide trainings on R best practices and extensively contribute to documentation on git usage and package development.</li>
+<li>Lead data science contributor on Customer Journey feature of <em>Publicis PeopleCloud</em>, a major internal tool being rolled out across the entire 80,000 employee company.</li>
+<li>Created models predicting a user’s liklihood of considering client brands and competitors. Used Spark and EMR to process data (over 1 billion rows per day).</li>
+</ul>
+</div>
+</div>
+<div id="digitas" class="section level3">
+<h3>Digitas</h3>
+<div id="sr.-data-scientist-january-2016---january-2018-boston-ma" class="section level4">
+<h4>Sr. Data Scientist | January 2016 - January 2018 | Boston, MA</h4>
+<ul>
+<li>Created a ticket price optimization tool for <em>School of Rock</em> using a customized ensemble model to predict sales and profit. Presented directly to top-level executives.</li>
+<li>Created and maintained media mix modeling tools for Victoria’s Secret.</li>
+<li>Led team-wide trainings on R best practices.</li>
+<li>Winner of <em>Rookie of the Year</em> award across 200-person analytics department.</li>
 </ul>
 </div>
 </div>
@@ -362,20 +377,17 @@ div.tocify {
 <div id="research-analyst-march-2015---december-2015-cambridge-ma" class="section level4">
 <h4>Research Analyst | March 2015 - December 2015 | Cambridge, MA</h4>
 <ul>
-<li>Developed a data automation and reporting application written in Python / Pandas.</li>
-<li>Analyzed and presented survey studies of grantees for philanthropic foundations.</li>
+<li>Developed a data automation and reporting application in Python / Pandas.</li>
 </ul>
 </div>
 </div>
-<div id="latitude-research" class="section level3">
-<h3>Latitude Research</h3>
-<div id="research-analyst-november-2013---february-2015-beverly-ma" class="section level4">
-<h4>Research Analyst | November 2013 - February 2015 | Beverly, MA</h4>
+<div id="aclu-of-massachusetts-pro-bono" class="section level3">
+<h3>ACLU of Massachusetts (pro-bono)</h3>
 <ul>
-<li>Led fielding and analysis of surveys on advertising effectiveness for major TV networks.</li>
+<li>Co-led data analysis in <em>CPCS v. Attorney General</em>, helping secure dismissals of thousands of convictions arising from tainted evidence.</li>
+<li>Led development of an interactive reporting tool to explore arrest and stop-and-frisk data.</li>
 </ul>
 <hr />
-</div>
 </div>
 </div>
 <div id="education" class="section level2">
@@ -388,12 +400,11 @@ div.tocify {
 <li>Coursework in machine learning, data visualization, and experimental design</li>
 <li>President of student TV club overseeing annual budget of $40,000 and staff of 20</li>
 </ul>
-<hr />
 </div>
 </div>
 </div>
-<div id="technical-skills" class="section level2">
-<h2>Technical Skills</h2>
+<div id="skills" class="section level2">
+<h2>Skills</h2>
 <table>
 <thead>
 <tr class="header">
@@ -403,24 +414,16 @@ div.tocify {
 </thead>
 <tbody>
 <tr class="odd">
-<td>High-level R and R package development</td>
-<td>Object-oriented design in Python</td>
+<td>R and R package development</td>
+<td>Python, pandas, object-oriented design</td>
 </tr>
 <tr class="even">
-<td>High-level SQL / Hive</td>
-<td>Machine Learning on clusters with H2O</td>
+<td>Big data tools (Spark, Hive, SQL)</td>
+<td>Machine learning (scikitlearn, SparkML)</td>
 </tr>
 <tr class="odd">
-<td>dplyr, sparklyr, shiny, pandas, scikitlearn</td>
-<td>Unix command line / Linux</td>
-</tr>
-<tr class="even">
-<td>Git version control</td>
-<td>AWS tools (S3, EC2, EMR, Redshift)</td>
-</tr>
-<tr class="odd">
-<td>Visualization with D3, ggplot2, Tableau</td>
-<td>Familiar with Scala and Spark</td>
+<td>Unix command line / Linux, Git</td>
+<td>AWS tools (S3, EC2, EMR, Redshift, Athena)</td>
 </tr>
 </tbody>
 </table>
@@ -428,7 +431,7 @@ div.tocify {
 
 <!DOCTYPE HTML>
 
-<p class=footer>&copy; 2017 Luke Davis</p>
+<p class=footer>&copy; 2018 Luke Davis</p>
 
 
 </div>

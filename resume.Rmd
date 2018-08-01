@@ -5,26 +5,31 @@ output:
     css: styles.css
 ---
 
-[luke.robert@gmail.com](mailto:luke.robert@gmail.com) | [lukedav.is](http://lukedav.is) | [github.com/lukerobert](https://github.com/lukerobert) | (303) 478 2957 | Cambridge, MA
+[mail@lukedav.is](mailto:mail@lukedav.is) | [lukedav.is](http://lukedav.is) | [github.com/lukerobert](https://github.com/lukerobert) | (303) 478 2957 | Cambridge, MA
+
+------
 
 ## Experience
 
-### DigitasLBi
-#### Sr. Data Scientist | January 2016 - Present | Boston, MA
-  * Implemented an automated system for analyzing the revenue impact of promotional offers for Dunkin Donuts using H2O, Spark, Redshift, and AWS EMR clusters.
-  * Created a price optimization tool for School of Rock (the Broadway musical) using a customized ensemble model to predict sales and profit. Implemented an AWS-hosted interactive Shiny dashboard to display findings.
-  * Used regularized regression and a custom R visualization package to create a media mix model and quarterly reports for Victoria's Secret.
-  * Use Hive to query user-level ad log data (~ 45B rows, 6TB total size).
-  * Lead team-wide trainings on R best practices and extensively contribute to documentation on git usage and package development.
+### Publicis Spine
+#### Sr. Data Scientist | February 2018 - Present | Boston, MA
+  * Lead data science contributor on Customer Journey feature of *Publicis PeopleCloud*, a major internal tool for an 80,000 employee company.
+  * Built models predicting a user's liklihood of considering client brands and competitors. Used Spark and EMR to process data (over 30 billion rows).
+
+### Digitas
+#### Sr. Data Scientist | January 2016 - January 2018 | Boston, MA
+  * Created a ticket price optimization tool for *School of Rock* using a customized ensemble model to predict sales and profit. Presented directly to top-level executives.
+  * Made and maintained media mix modeling tools for Victoria's Secret.
+  * Led team-wide trainings on R best practices.
+  * Winner of *Rookie of the Year* award across 200-person analytics department.
 
 ### The Center for Effective Philanthropy
 #### Research Analyst | March 2015 - December 2015 | Cambridge, MA
-  * Developed a data automation and reporting application written in Python / Pandas.
-  * Analyzed and presented survey studies of grantees for philanthropic foundations.
+  * Developed a data automation and reporting application in Python / Pandas.
 
-### Latitude Research
-#### Research Analyst | November 2013 - February 2015 | Beverly, MA
-  * Led fielding and analysis of surveys on advertising effectiveness for major TV networks.
+### ACLU of Massachusetts (pro-bono)
+* Co-led data analysis in *CPCS v. Attorney General*, helping secure dismissals of thousands of convictions arising from tainted evidence.
+* Led development of an interactive reporting tool to explore arrest and stop-and-frisk data.
 
 -------
 
@@ -34,14 +39,9 @@ output:
   * Coursework in machine learning, data visualization, and experimental design
   * President of student TV club overseeing annual budget of $40,000 and staff of 20
 
-------
-
-## Technical Skills
-
+## Skills
 | []() |  |
 |---|---|
-| High-level R and R package development | Object-oriented design in Python
-| High-level SQL / Hive | Machine Learning on clusters with H2O
-| dplyr, sparklyr, shiny, pandas, scikitlearn | Unix command line / Linux
-| Git version control | AWS tools (S3, EC2, EMR, Redshift)
-| Visualization with D3, ggplot2, Tableau | Familiar with Scala and Spark
+| R and R package development | Python, pandas, object-oriented design
+| Big data tools (Spark, Hive, SQL) | Machine learning (scikitlearn, SparkML)
+| Unix command line / Linux, Git | AWS tools (S3, EC2, EMR, Redshift, Athena)

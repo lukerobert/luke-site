@@ -23,7 +23,9 @@
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.0.13/css/fa-svg-with-js.css" rel="stylesheet" />
+<script src="site_libs/font-awesome-5.0.13/js/fontawesome-all.min.js"></script>
+<script src="site_libs/font-awesome-5.0.13/js/fa-v4-shims.min.js"></script>
 <!DOCTYPE HTML>
 <head>
 <title>Luke Davis</title>
@@ -130,6 +132,9 @@ img {
 }
 .tabbed-pane {
   padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
 }
 button.code-folding-btn:focus {
   outline: none;
@@ -365,7 +370,7 @@ div.tocify {
   </a>
 </li>
 <li>
-  <a href="mailto:luke.robert@gmail.com">
+  <a href="mailto:mail@lukedav.is">
     <span class="fa fa-envelope"></span>
      
   </a>
@@ -385,8 +390,8 @@ div.tocify {
 
 <p>Here is a big list of projects. Also <code>rnorm</code> is a function that does stuff. Here’s a block of code:</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">rnorm</span>(<span class="dv">10</span>)</code></pre></div>
-<pre><code>##  [1]  0.39334560  1.67808910  1.01702322  1.01290090 -0.03132614
-##  [6] -0.50935348 -0.81756458 -1.13741079  0.67057504 -1.21941742</code></pre>
+<pre><code>##  [1]  0.80308522  0.05401574 -0.35884305 -1.05170264 -1.94634959
+##  [6] -0.78619479 -0.02900648 -0.77626766 -0.66032196  0.17727683</code></pre>
 <div id="table-form" class="section level3">
 <h3>Table form</h3>
 <table style="width:89%;">
@@ -425,11 +430,11 @@ div.tocify {
 </tr>
 </tbody>
 </table>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">knitr::opts_chunk$<span class="kw">set</span>(<span class="dt">echo =</span> <span class="ot">TRUE</span>, <span class="dt">cache =</span> F, <span class="dt">warning =</span> F)
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">knitr<span class="op">::</span>opts_chunk<span class="op">$</span><span class="kw">set</span>(<span class="dt">echo =</span> <span class="ot">TRUE</span>, <span class="dt">cache =</span> F, <span class="dt">warning =</span> F)
 <span class="kw">library</span>(printr)
 
-x &lt;-<span class="st"> </span><span class="dv">32</span> &lt;=<span class="st"> </span><span class="dv">50</span>  <span class="co"># Code ligatures!</span>
-x !=<span class="st"> </span>F</code></pre></div>
+x &lt;-<span class="st"> </span><span class="dv">32</span> <span class="op">&lt;=</span><span class="st"> </span><span class="dv">50</span>  <span class="co"># Code ligatures!</span>
+x <span class="op">!=</span><span class="st"> </span>F</code></pre></div>
 <pre><code>## [1] TRUE</code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Some cool comments.</span>
 <span class="co"># Cooooooool.</span>
@@ -438,7 +443,7 @@ x !=<span class="st"> </span>F</code></pre></div>
 
 <!DOCTYPE HTML>
 
-<p class=footer>&copy; 2017 Luke Davis</p>
+<p class=footer>&copy; 2018 Luke Davis</p>
 
 
 </div>

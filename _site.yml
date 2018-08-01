@@ -41,7 +41,7 @@ navbar:
     - icon: fa-linkedin
       href: "https://www.linkedin.com/in/luke-davis-b380ba76"
     - icon: fa-envelope
-      href: "mailto:luke.robert@gmail.com"
+      href: "mailto:mail@lukedav.is"
 output:
   html_document:
     theme: simplex
